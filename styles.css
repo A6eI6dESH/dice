@@ -1,0 +1,125 @@
+body{
+  height: 90vh;
+  background-color: grey;
+}
+
+.container{
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr ;
+
+}
+
+.headder{
+  grid-area: 1/3/2/4;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.player1{
+  grid-area: 2/2/3/3;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+
+
+}
+
+.player2{
+  grid-area: 2/4/3/5;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  
+}
+
+.dice1{
+  background-color: red;
+  grid-area: 3/2/4/3;
+  height: 200px;
+  width: 200px;
+  margin-left: 38px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  
+}
+
+
+.roll{
+  grid-area: 4/3/5/4;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+button{
+  height: 50px;
+  width: 150px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15pt;
+  border: solid white 1px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  
+}
+
+.dice2{
+  background-color: red;
+  grid-area: 3/4/4/5;
+  height: 200px;
+  width: 200px;
+  margin-left: 38px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  
+}
+
+
+.dice1 *{
+  background-color: red;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin-left: 8px;
+  margin-top: 8px;
+}
+
+
+.dice2 *{
+  background-color: red;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin-left: 8px;
+  margin-top: 8px;
+}
+
+p{
+  font-size: 50pt;
+  margin: 0;
+  text-align: center;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.players{
+  font-size: 25pt;
+  margin: 0;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 30px;
+}
+
+
+
+/*rolling dice*/
+
+.colorWhite{
+  background-color: white;
+}
